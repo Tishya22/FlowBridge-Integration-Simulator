@@ -1,0 +1,497 @@
+[
+    {
+        "time": "2026-04-17T23:55:10.554883",
+        "stage": "ORDER_RECEIVED",
+        "status": "INFO",
+        "message": "New order received for processing",
+        "payload": {
+            "channel": "website",
+            "customer": {
+                "name": "Riya Sharma",
+                "city": "Bhubaneswar"
+            },
+            "deliveryType": "standard",
+            "paymentMode": "prepaid",
+            "items": [
+                {
+                    "sku": "AHC101",
+                    "quantity": 1
+                }
+            ]
+        }
+    },
+    {
+        "time": "2026-04-17T23:55:10.572944",
+        "stage": "ROUTING",
+        "status": "SUCCESS",
+        "message": "Order routed through STANDARD_WEB_FLOW",
+        "payload": {
+            "channel": "website",
+            "customer": {
+                "name": "Riya Sharma",
+                "city": "Bhubaneswar"
+            },
+            "deliveryType": "standard",
+            "paymentMode": "prepaid",
+            "items": [
+                {
+                    "sku": "AHC101",
+                    "quantity": 1
+                }
+            ]
+        }
+    },
+    {
+        "time": "2026-04-17T23:55:10.588849",
+        "stage": "VALIDATION",
+        "status": "SUCCESS",
+        "message": "Order validation successful",
+        "payload": {
+            "channel": "website",
+            "customer": {
+                "name": "Riya Sharma",
+                "city": "Bhubaneswar"
+            },
+            "deliveryType": "standard",
+            "paymentMode": "prepaid",
+            "items": [
+                {
+                    "sku": "AHC101",
+                    "quantity": 1
+                }
+            ]
+        }
+    },
+    {
+        "time": "2026-04-17T23:55:10.610107",
+        "stage": "INVENTORY",
+        "status": "SUCCESS",
+        "message": "Stock reserved successfully",
+        "payload": {
+            "channel": "website",
+            "customer": {
+                "name": "Riya Sharma",
+                "city": "Bhubaneswar"
+            },
+            "deliveryType": "standard",
+            "paymentMode": "prepaid",
+            "items": [
+                {
+                    "sku": "AHC101",
+                    "quantity": 1
+                }
+            ]
+        }
+    },
+    {
+        "time": "2026-04-17T23:55:10.635577",
+        "stage": "ORDER_CREATION",
+        "status": "SUCCESS",
+        "message": "Order created successfully",
+        "payload": {
+            "orderId": "ORD-2415ceef",
+            "channel": "website",
+            "routeType": "STANDARD_WEB_FLOW",
+            "customer": {
+                "name": "Riya Sharma",
+                "city": "Bhubaneswar"
+            },
+            "items": [
+                {
+                    "sku": "AHC101",
+                    "quantity": 1
+                }
+            ],
+            "paymentMode": "prepaid",
+            "deliveryType": "standard",
+            "status": "CREATED",
+            "createdAt": "2026-04-17T23:55:10.613971"
+        }
+    },
+    {
+        "time": "2026-04-17T23:55:10.668170",
+        "stage": "BILLING",
+        "status": "SUCCESS",
+        "message": "Invoice generated successfully",
+        "payload": {
+            "invoiceId": "INV-ORD-2415ceef",
+            "orderId": "ORD-2415ceef",
+            "itemCount": 1,
+            "totalAmount": 500,
+            "paymentMode": "prepaid",
+            "invoiceItems": [
+                {
+                    "sku": "AHC101",
+                    "quantity": 1,
+                    "unitPrice": 500,
+                    "lineTotal": 500
+                }
+            ],
+            "billingStatus": "INVOICE_GENERATED"
+        }
+    },
+    {
+        "time": "2026-04-17T23:55:10.702302",
+        "stage": "SHIPPING",
+        "status": "SUCCESS",
+        "message": "Shipment created successfully",
+        "payload": {
+            "shipmentId": "SHP-ORD-2415ceef",
+            "orderId": "ORD-2415ceef",
+            "trackingId": "TRK-4d96f09a",
+            "carrier": "BlueDart",
+            "dispatchTime": "2026-04-17T23:55:10.673469",
+            "shippingStatus": "DISPATCHED"
+        }
+    },
+    {
+        "time": "2026-04-17T23:55:23.293496",
+        "stage": "ORDER_RECEIVED",
+        "status": "INFO",
+        "message": "New order received for processing",
+        "payload": {
+            "channel": "reseller",
+            "customer": {
+                "name": "Kabir Shah",
+                "city": "Ahmedabad"
+            },
+            "deliveryType": "standard",
+            "paymentMode": "cod",
+            "items": [
+                {
+                    "sku": "AHC102",
+                    "quantity": 2
+                }
+            ]
+        }
+    },
+    {
+        "time": "2026-04-17T23:55:23.314809",
+        "stage": "ROUTING",
+        "status": "SUCCESS",
+        "message": "Order routed through BULK_PARTNER_FLOW",
+        "payload": {
+            "channel": "reseller",
+            "customer": {
+                "name": "Kabir Shah",
+                "city": "Ahmedabad"
+            },
+            "deliveryType": "standard",
+            "paymentMode": "cod",
+            "items": [
+                {
+                    "sku": "AHC102",
+                    "quantity": 2
+                }
+            ]
+        }
+    },
+    {
+        "time": "2026-04-17T23:55:23.335364",
+        "stage": "VALIDATION",
+        "status": "SUCCESS",
+        "message": "Order validation successful",
+        "payload": {
+            "channel": "reseller",
+            "customer": {
+                "name": "Kabir Shah",
+                "city": "Ahmedabad"
+            },
+            "deliveryType": "standard",
+            "paymentMode": "cod",
+            "items": [
+                {
+                    "sku": "AHC102",
+                    "quantity": 2
+                }
+            ]
+        }
+    },
+    {
+        "time": "2026-04-17T23:55:23.357001",
+        "stage": "INVENTORY",
+        "status": "SUCCESS",
+        "message": "Stock reserved successfully",
+        "payload": {
+            "channel": "reseller",
+            "customer": {
+                "name": "Kabir Shah",
+                "city": "Ahmedabad"
+            },
+            "deliveryType": "standard",
+            "paymentMode": "cod",
+            "items": [
+                {
+                    "sku": "AHC102",
+                    "quantity": 2
+                }
+            ]
+        }
+    },
+    {
+        "time": "2026-04-17T23:55:23.378596",
+        "stage": "ORDER_CREATION",
+        "status": "SUCCESS",
+        "message": "Order created successfully",
+        "payload": {
+            "orderId": "ORD-e4a57317",
+            "channel": "reseller",
+            "routeType": "BULK_PARTNER_FLOW",
+            "customer": {
+                "name": "Kabir Shah",
+                "city": "Ahmedabad"
+            },
+            "items": [
+                {
+                    "sku": "AHC102",
+                    "quantity": 2
+                }
+            ],
+            "paymentMode": "cod",
+            "deliveryType": "standard",
+            "status": "CREATED",
+            "createdAt": "2026-04-17T23:55:23.360920"
+        }
+    },
+    {
+        "time": "2026-04-17T23:55:23.414136",
+        "stage": "BILLING",
+        "status": "SUCCESS",
+        "message": "Invoice generated successfully",
+        "payload": {
+            "invoiceId": "INV-ORD-e4a57317",
+            "orderId": "ORD-e4a57317",
+            "itemCount": 1,
+            "totalAmount": 700,
+            "paymentMode": "cod",
+            "invoiceItems": [
+                {
+                    "sku": "AHC102",
+                    "quantity": 2,
+                    "unitPrice": 350,
+                    "lineTotal": 700
+                }
+            ],
+            "billingStatus": "INVOICE_GENERATED"
+        }
+    },
+    {
+        "time": "2026-04-17T23:55:23.435005",
+        "stage": "SHIPPING",
+        "status": "SUCCESS",
+        "message": "Shipment created successfully",
+        "payload": {
+            "shipmentId": "SHP-ORD-e4a57317",
+            "orderId": "ORD-e4a57317",
+            "trackingId": "TRK-98c78cf4",
+            "carrier": "BlueDart",
+            "dispatchTime": "2026-04-17T23:55:23.417674",
+            "shippingStatus": "DISPATCHED"
+        }
+    },
+    {
+        "time": "2026-04-17T23:55:35.322422",
+        "stage": "ORDER_RECEIVED",
+        "status": "INFO",
+        "message": "New order received for processing",
+        "payload": {
+            "channel": "exhibition",
+            "customer": {
+                "name": "Neha Sen",
+                "city": "Ranchi"
+            },
+            "deliveryType": "express",
+            "paymentMode": "prepaid",
+            "items": [
+                {
+                    "sku": "AHC103",
+                    "quantity": 1
+                }
+            ]
+        }
+    },
+    {
+        "time": "2026-04-17T23:55:35.342906",
+        "stage": "ROUTING",
+        "status": "SUCCESS",
+        "message": "Order routed through QUICK_COUNTER_FLOW",
+        "payload": {
+            "channel": "exhibition",
+            "customer": {
+                "name": "Neha Sen",
+                "city": "Ranchi"
+            },
+            "deliveryType": "express",
+            "paymentMode": "prepaid",
+            "items": [
+                {
+                    "sku": "AHC103",
+                    "quantity": 1
+                }
+            ]
+        }
+    },
+    {
+        "time": "2026-04-17T23:55:35.363028",
+        "stage": "VALIDATION",
+        "status": "SUCCESS",
+        "message": "Order validation successful",
+        "payload": {
+            "channel": "exhibition",
+            "customer": {
+                "name": "Neha Sen",
+                "city": "Ranchi"
+            },
+            "deliveryType": "express",
+            "paymentMode": "prepaid",
+            "items": [
+                {
+                    "sku": "AHC103",
+                    "quantity": 1
+                }
+            ]
+        }
+    },
+    {
+        "time": "2026-04-17T23:55:35.388488",
+        "stage": "INVENTORY",
+        "status": "SUCCESS",
+        "message": "Stock reserved successfully",
+        "payload": {
+            "channel": "exhibition",
+            "customer": {
+                "name": "Neha Sen",
+                "city": "Ranchi"
+            },
+            "deliveryType": "express",
+            "paymentMode": "prepaid",
+            "items": [
+                {
+                    "sku": "AHC103",
+                    "quantity": 1
+                }
+            ]
+        }
+    },
+    {
+        "time": "2026-04-17T23:55:35.410217",
+        "stage": "ORDER_CREATION",
+        "status": "SUCCESS",
+        "message": "Order created successfully",
+        "payload": {
+            "orderId": "ORD-d3b35d89",
+            "channel": "exhibition",
+            "routeType": "QUICK_COUNTER_FLOW",
+            "customer": {
+                "name": "Neha Sen",
+                "city": "Ranchi"
+            },
+            "items": [
+                {
+                    "sku": "AHC103",
+                    "quantity": 1
+                }
+            ],
+            "paymentMode": "prepaid",
+            "deliveryType": "express",
+            "status": "CREATED",
+            "createdAt": "2026-04-17T23:55:35.392234"
+        }
+    },
+    {
+        "time": "2026-04-17T23:55:35.450893",
+        "stage": "BILLING",
+        "status": "SUCCESS",
+        "message": "Invoice generated successfully",
+        "payload": {
+            "invoiceId": "INV-ORD-d3b35d89",
+            "orderId": "ORD-d3b35d89",
+            "itemCount": 1,
+            "totalAmount": 250,
+            "paymentMode": "prepaid",
+            "invoiceItems": [
+                {
+                    "sku": "AHC103",
+                    "quantity": 1,
+                    "unitPrice": 250,
+                    "lineTotal": 250
+                }
+            ],
+            "billingStatus": "INVOICE_GENERATED"
+        }
+    },
+    {
+        "time": "2026-04-17T23:55:35.473302",
+        "stage": "SHIPPING",
+        "status": "SUCCESS",
+        "message": "Shipment created successfully",
+        "payload": {
+            "shipmentId": "SHP-ORD-d3b35d89",
+            "orderId": "ORD-d3b35d89",
+            "trackingId": "TRK-534cdee5",
+            "carrier": "BlueDart",
+            "dispatchTime": "2026-04-17T23:55:35.454479",
+            "shippingStatus": "DISPATCHED"
+        }
+    },
+    {
+        "time": "2026-04-17T23:55:46.267593",
+        "stage": "ORDER_RECEIVED",
+        "status": "INFO",
+        "message": "New order received for processing",
+        "payload": {
+            "channel": "website",
+            "customer": {
+                "city": "Cuttack"
+            },
+            "deliveryType": "standard",
+            "paymentMode": "prepaid",
+            "items": [
+                {
+                    "sku": "AHC102",
+                    "quantity": 1
+                }
+            ]
+        }
+    },
+    {
+        "time": "2026-04-17T23:55:46.285421",
+        "stage": "ROUTING",
+        "status": "SUCCESS",
+        "message": "Order routed through STANDARD_WEB_FLOW",
+        "payload": {
+            "channel": "website",
+            "customer": {
+                "city": "Cuttack"
+            },
+            "deliveryType": "standard",
+            "paymentMode": "prepaid",
+            "items": [
+                {
+                    "sku": "AHC102",
+                    "quantity": 1
+                }
+            ]
+        }
+    },
+    {
+        "time": "2026-04-17T23:55:46.306602",
+        "stage": "VALIDATION",
+        "status": "FAILED",
+        "message": "Customer name is required",
+        "payload": {
+            "channel": "website",
+            "customer": {
+                "city": "Cuttack"
+            },
+            "deliveryType": "standard",
+            "paymentMode": "prepaid",
+            "items": [
+                {
+                    "sku": "AHC102",
+                    "quantity": 1
+                }
+            ]
+        }
+    }
+]

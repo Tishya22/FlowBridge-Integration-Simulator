@@ -1,0 +1,20 @@
+[
+    {
+        "sku": "AHC101",
+        "name": "Bamboo Lamp",
+        "price": 500,
+        "stock": 19
+    },
+    {
+        "sku": "AHC102",
+        "name": "Clay Vase",
+        "price": 350,
+        "stock": 13
+    },
+    {
+        "sku": "AHC103",
+        "name": "Woven Basket",
+        "price": 250,
+        "stock": 29
+    }
+]

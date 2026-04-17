@@ -1,0 +1,59 @@
+[
+    {
+        "orderId": "ORD-2415ceef",
+        "channel": "website",
+        "routeType": "STANDARD_WEB_FLOW",
+        "customer": {
+            "name": "Riya Sharma",
+            "city": "Bhubaneswar"
+        },
+        "items": [
+            {
+                "sku": "AHC101",
+                "quantity": 1
+            }
+        ],
+        "paymentMode": "prepaid",
+        "deliveryType": "standard",
+        "status": "CREATED",
+        "createdAt": "2026-04-17T23:55:10.613971"
+    },
+    {
+        "orderId": "ORD-e4a57317",
+        "channel": "reseller",
+        "routeType": "BULK_PARTNER_FLOW",
+        "customer": {
+            "name": "Kabir Shah",
+            "city": "Ahmedabad"
+        },
+        "items": [
+            {
+                "sku": "AHC102",
+                "quantity": 2
+            }
+        ],
+        "paymentMode": "cod",
+        "deliveryType": "standard",
+        "status": "CREATED",
+        "createdAt": "2026-04-17T23:55:23.360920"
+    },
+    {
+        "orderId": "ORD-d3b35d89",
+        "channel": "exhibition",
+        "routeType": "QUICK_COUNTER_FLOW",
+        "customer": {
+            "name": "Neha Sen",
+            "city": "Ranchi"
+        },
+        "items": [
+            {
+                "sku": "AHC103",
+                "quantity": 1
+            }
+        ],
+        "paymentMode": "prepaid",
+        "deliveryType": "express",
+        "status": "CREATED",
+        "createdAt": "2026-04-17T23:55:35.392234"
+    }
+]

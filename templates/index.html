@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowBridge Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>FlowBridge Integration Simulator</h1>
+        <p class="subtitle">SAP Integration Project Dashboard</p>
+
+        <div class="card-grid">
+            <div class="card">
+                <h2>Service Health</h2>
+                <button onclick="loadHealth()">Check Health</button>
+                <div id="healthOutput" class="json-box compact-box">No data loaded yet.</div>
+            </div>
+
+            <div class="card">
+                <h2>System Summary</h2>
+                <button onclick="loadSummary()">Load Summary</button>
+                <div id="summaryOutput" class="json-box compact-box">No data loaded yet.</div>
+            </div>
+
+            <div class="card">
+                <h2>Inventory</h2>
+                <button onclick="loadInventory()">View Inventory</button>
+                <div id="inventoryOutput" class="json-box">No data loaded yet.</div>
+            </div>
+
+            <div class="card">
+                <h2>Orders</h2>
+                <button onclick="loadOrders()">View Orders</button>
+                <div id="ordersOutput" class="json-box">No data loaded yet.</div>
+            </div>
+
+            <div class="card">
+                <h2>Invoices</h2>
+                <button onclick="loadInvoices()">View Invoices</button>
+                <div id="invoicesOutput" class="json-box">No data loaded yet.</div>
+            </div>
+
+            <div class="card">
+                <h2>Shipments</h2>
+                <button onclick="loadShipments()">View Shipments</button>
+                <div id="shipmentsOutput" class="json-box">No data loaded yet.</div>
+            </div>
+
+            <div class="card">
+                <h2>Logs</h2>
+                <button onclick="loadLogs()">View Logs</button>
+                <div id="logsOutput" class="json-box">No data loaded yet.</div>
+            </div>
+
+            <div class="card">
+                <h2>Deadletters</h2>
+                <button onclick="loadDeadletters()">View Deadletters</button>
+                <div id="deadlettersOutput" class="json-box">No data loaded yet.</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
